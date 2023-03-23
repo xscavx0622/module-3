@@ -22,10 +22,8 @@ body {
   border: 6px solid #ddd;
   padding: 20px;
   margin: 20px auto;
-  min-height: 200px;
   text-align: center;
   width: 90%;
-  max-width: 600px;
 }
 
 .row {
@@ -34,6 +32,22 @@ body {
   align-items: center;
   justify-content: center;
   margin: 20px;
+}
+
+.tall-section {
+  margin: 20px;
+}
+
+.tall-section .menu-item {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .tall-section .menu-item {
+    flex-basis: 100%;
+    margin: 10;
+    height: 1000px;
+  }
 }
 
 h2 {
